@@ -1,6 +1,6 @@
-# Hub
+# Atelier
 
-A minimal launcher for my AI fashion ecosystem. One landing page, three apps.
+A minimal launcher for the WYA fashion-AI ecosystem. One landing page, three apps.
 
 ## What it does
 
@@ -14,7 +14,7 @@ Single static page with three tiles — click one and it opens that app in a new
 
 ## Live
 
-**[ria0304.github.io/hub](https://ria0304.github.io/hub)**
+**[ria0304.github.io/atelier](https://ria0304.github.io/atelier)**
 
 ## Stack
 
