@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ria's apps</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #f6b9cf 0%, #c9a6de 30%, #a7c1e8 60%, #7dd6c4 100%);
+    background-attachment: fixed;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 20px;
+    padding: 2.5rem 1.5rem;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 20px 60px rgba(44, 44, 74, 0.15);
+  }
+
+  .heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    color: #2c2c4a;
+    margin-bottom: 0.35rem;
+  }
+
+  .subheading {
+    font-size: 13px;
+    text-align: center;
+    color: #8a8898;
+    margin-bottom: 2rem;
+  }
+
+  .tiles {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .tile {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 1rem;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.2s ease;
+    cursor: pointer;
+  }
+
+  .tile.wya { border: 1px solid rgba(246, 185, 207, 0.5); }
+  .tile.luna { border: 1px solid rgba(167, 193, 232, 0.5); }
+  .tile.tryon {
+    border: 1px solid #e8e6ee;
+    background: #f7f6f9;
+    opacity: 0.65;
+    cursor: default;
+  }
+
+  .tile:not(.tryon):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(44, 44, 74, 0.14);
+  }
+
+  .tile-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .wya .tile-icon { background: linear-gradient(135deg, #f6b9cf, #c9a6de); }
+  .luna .tile-icon { background: linear-gradient(135deg, #a7c1e8, #7dd6c4); }
+  .tryon .tile-icon { background: #d8d5e0; }
+
+  .tile-text { flex: 1; }
+
+  .tile-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2c2c4a;
+    margin-bottom: 2px;
+  }
+
+  .tryon .tile-name { color: #6b6b8a; }
+
+  .tile-desc {
+    font-size: 12px;
+    color: #6b6b8a;
+  }
+
+  .tryon .tile-desc { color: #9b99a8; }
+
+  .tile-cta {
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    white-space: nowrap;
+    transition: transform 0.15s ease;
+  }
+
+  .wya .tile-cta { color: #c9a6de; }
+  .luna .tile-cta { color: #7dd6c4; }
+
+  .tile:not(.tryon):hover .tile-cta { transform: translateX(4px); }
+
+  .badge {
+    font-size: 11px;
+    font-weight: 500;
+    color: #9b99a8;
+    background: #ece9f0;
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <p class="heading">Choose an app</p>
+  <p class="subheading">Welcome back</p>
+
+  <div class="tiles">
+
+    <a class="tile wya" href="https://dsbml6kwxecah.cloudfront.net/" target="_blank" rel="noopener">
+      <div class="tile-icon">&#128085;</div>
+      <div class="tile-text">
+        <div class="tile-name">WYA</div>
+        <div class="tile-desc">Build and organize your digital wardrobe</div>
+      </div>
+      <span class="tile-cta">Choose &rsaquo;</span>
+    </a>
+
+    <a class="tile luna" href="https://d34nojihupg1cl.cloudfront.net/" target="_blank" rel="noopener">
+      <div class="tile-icon">&#128172;</div>
+      <div class="tile-text">
+        <div class="tile-name">Luna</div>
+        <div class="tile-desc">Your AI stylist for outfits and fashion advice</div>
+      </div>
+      <span class="tile-cta">Choose &rsaquo;</span>
+    </a>
+
+    <div class="tile tryon">
+      <div class="tile-icon">&#127919;</div>
+      <div class="tile-text">
+        <div class="tile-name">TryOn</div>
+        <div class="tile-desc">Experience outfits on a virtual avatar</div>
+      </div>
+      <span class="badge">Coming soon</span>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
