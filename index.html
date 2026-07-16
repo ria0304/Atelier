@@ -65,7 +65,8 @@
 
   .tile.wya { border: 1px solid rgba(246, 185, 207, 0.5); }
   .tile.luna { border: 1px solid rgba(167, 193, 232, 0.5); }
-  .tile.tryon {
+  .tile.tryon,
+  .tile.velaris {
     border: 1px solid #e8e6ee;
     background: #f7f6f9;
     opacity: 0.65;
@@ -91,7 +92,8 @@
 
   .wya .tile-icon { background: linear-gradient(135deg, #f6b9cf, #c9a6de); }
   .luna .tile-icon { background: linear-gradient(135deg, #a7c1e8, #7dd6c4); }
-  .tryon .tile-icon { background: #d8d5e0; }
+  .tryon .tile-icon,
+  .velaris .tile-icon { background: #d8d5e0; }
 
   .tile-text { flex: 1; }
 
@@ -102,14 +104,16 @@
     margin-bottom: 2px;
   }
 
-  .tryon .tile-name { color: #6b6b8a; }
+  .tryon .tile-name,
+  .velaris .tile-name { color: #6b6b8a; }
 
   .tile-desc {
     font-size: 12px;
     color: #6b6b8a;
   }
 
-  .tryon .tile-desc { color: #9b99a8; }
+  .tryon .tile-desc,
+  .velaris .tile-desc { color: #9b99a8; }
 
   .tile-cta {
     font-size: 12px;
@@ -141,7 +145,7 @@
 
 <div class="card">
   <p class="heading">Atelier</p>
-  <p class="subheading">Choose an app</p>
+  <p class="subheading">Fashion tech, one place</p>
 
   <div class="tiles">
 
@@ -168,6 +172,15 @@
       <div class="tile-text">
         <div class="tile-name">TryOn</div>
         <div class="tile-desc">Experience outfits on a virtual avatar</div>
+      </div>
+      <span class="badge">Coming soon</span>
+    </div>
+
+    <div class="tile velaris">
+      <div class="tile-icon">&#128142;</div>
+      <div class="tile-text">
+        <div class="tile-name">Velaris</div>
+        <div class="tile-desc">From inspiration to jewellery design</div>
       </div>
       <span class="badge">Coming soon</span>
     </div>
