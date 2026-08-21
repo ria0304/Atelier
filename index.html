@@ -69,11 +69,9 @@
   .tile.velaris {
     border: 1px solid #e8e6ee;
     background: #f7f6f9;
-    opacity: 0.65;
-    cursor: default;
   }
 
-  .tile:not(.tryon):hover {
+  .tile:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(44, 44, 74, 0.14);
   }
@@ -127,8 +125,10 @@
 
   .wya .tile-cta { color: #c9a6de; }
   .luna .tile-cta { color: #7dd6c4; }
+  .tryon .tile-cta,
+  .velaris .tile-cta { color: #9b99a8; }
 
-  .tile:not(.tryon):hover .tile-cta { transform: translateX(4px); }
+  .tile:hover .tile-cta { transform: translateX(4px); }
 
   .badge {
     font-size: 11px;
@@ -149,41 +149,45 @@
 
   <div class="tiles">
 
-    <a class="tile wya" href="https://dsbml6kwxecah.cloudfront.net/" target="_blank" rel="noopener">
+    <a class="tile wya" href="https://github.com/ria0304/WYA-Whats-Your-Aesthetic" target="_blank" rel="noopener">
       <div class="tile-icon">&#128085;</div>
       <div class="tile-text">
         <div class="tile-name">WYA</div>
         <div class="tile-desc">Build and organize your digital wardrobe</div>
       </div>
-      <span class="tile-cta">Choose &rsaquo;</span>
+      <span class="badge">Backend paused</span>
+      <span class="tile-cta">View repo &rsaquo;</span>
     </a>
 
-    <a class="tile luna" href="https://d34nojihupg1cl.cloudfront.net/" target="_blank" rel="noopener">
+    <a class="tile luna" href="https://github.com/ria0304/luna-stylist" target="_blank" rel="noopener">
       <div class="tile-icon">&#128172;</div>
       <div class="tile-text">
         <div class="tile-name">Luna</div>
         <div class="tile-desc">Your AI stylist for outfits and fashion advice</div>
       </div>
-      <span class="tile-cta">Choose &rsaquo;</span>
+      <span class="badge">Backend paused</span>
+      <span class="tile-cta">View repo &rsaquo;</span>
     </a>
 
-    <div class="tile tryon">
+    <a class="tile tryon" href="https://github.com/ria0304/TryOn" target="_blank" rel="noopener">
       <div class="tile-icon">&#127919;</div>
       <div class="tile-text">
         <div class="tile-name">TryOn</div>
         <div class="tile-desc">Experience outfits on a virtual avatar</div>
       </div>
-      <span class="badge">Coming soon</span>
-    </div>
+      <span class="badge">In development</span>
+      <span class="tile-cta">View repo &rsaquo;</span>
+    </a>
 
-    <div class="tile velaris">
+    <a class="tile velaris" href="https://github.com/ria0304/Velaris-From-Inspiration-to-Jewellery-Design" target="_blank" rel="noopener">
       <div class="tile-icon">&#128142;</div>
       <div class="tile-text">
         <div class="tile-name">Velaris</div>
         <div class="tile-desc">From inspiration to jewellery design</div>
       </div>
-      <span class="badge">Coming soon</span>
-    </div>
+      <span class="badge">In development</span>
+      <span class="tile-cta">View repo &rsaquo;</span>
+    </a>
 
   </div>
 </div>
