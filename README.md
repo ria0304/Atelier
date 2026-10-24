@@ -10,7 +10,7 @@ Single static page with tiles for each app — click a live one and it opens in 
 |---|---|---|
 | [WYA](https://dsbml6kwxecah.cloudfront.net/) | Build and organize your digital wardrobe | Live |
 | [Luna](https://d34nojihupg1cl.cloudfront.net/) | AI stylist for outfits and fashion advice | Live |
-| TryOn | See outfits on a 3D avatar | Coming soon |
+| TryOn | See outfits on a 3D avatar | Live Locally |
 | Velaris | From inspiration to jewellery design | Coming soon |
 
 ## Live
