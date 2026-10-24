@@ -31,6 +31,5 @@ Push to `main` — GitHub Pages serves `index.html` from the repo root automatic
 
 ## Roadmap
 
-- [ ] Swap TryOn's placeholder tile for a live link once that app ships
 - [ ] Swap Velaris's placeholder tile for a live link once that app ships
 
